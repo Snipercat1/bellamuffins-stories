@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Basic reset and typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body {
+            background-color: #09ccfd;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        /* Profile layout card */
+        .about-card {
+            background: #f074d1;
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            background-color: #dddddd00;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .title-sub {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        /* Social Media Section */
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .social-link {
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: opacity 0.2s ease;
+        }
+        .social-link:hover {
+            opacity: 0.85;
+        }
+        /* Brand Colors */
+        .linkedin { background-color: #0077b5; }
+        .github { background-color: #24292e; }
+        .twitter { background-color: #1da1f2; }
+        
+        .back-btn {
+            color: #0070f3;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-card">
+       
+         <img src="Images/Bella-photo.jpg" alt="Profile Image" class="profile-img">
+
+        <h1>About Me</h1>
+        <p class="title-sub">Web Developer & Designer</p>
+        
+        <p>Hi there! Welcome to my website. I build things for the web. Feel free to connect with me through my social channels below.</p>
+
+        <!-- Social Media Buttons -->
+        <div class="social-container">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link linkedin">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link github">GitHub</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link twitter">X / Twitter</a>
+        </div>
+
+        <!-- Link back to index.html -->
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </div>
+
+</body>
+</html>
