@@ -1,0 +1,110 @@
+/* ==========================================================================
+   1. GLOBAL RESETS & BODY (Controls the entire background & fonts)
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #fafafa; /* A clean, light canvas for the whole site */
+  color: #222;
+}
+
+/* ==========================================================================
+   2. THE HERO SECTION (Your layout controls moved here!)
+   ========================================================================== */
+.hero {
+  display: flex;
+  flex-direction: column;  /* Stacks elements vertically */
+  justify-content: center; /* Centers everything vertically */
+  align-items: center;     /* Centers everything horizontally */
+  min-height: 85vh;        /* Fills most of the screen height */
+  text-align: center;      /* Keeps the text aligned in the middle */
+  padding: 40px 20px;
+  
+  /* 🎨 YOUR BRIGHT AQUA BACKGROUND FROM BEFORE */
+  background-color: rgb(44, 218, 209); 
+  
+  /* OPTIONAL alternative: If you prefer the soft gradient from the last step, 
+     you can comment out the aqua color and uncomment the line below: */
+  /* background: linear-gradient(135deg, #fbe4eb 0%, #e3edff 100%); */
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   3. YOUR STORY IMAGE CODE
+   ========================================================================== */
+.story-image {
+  width: 300px;
+  max-width: 90%;       /* Keeps the picture from spilling off phone screens */
+  height: auto;
+  border-radius: 12px;  /* Slightly smoother professional roundness */
+  margin: 0 auto 24px;  /* Centers the image perfectly and adds bottom space */
+  display: block;       /* Fixes image centering spacing */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Adds a high-end photo shadow */
+}
+
+/* ==========================================================================
+   4. NEW NAVIGATION BUTTON DESIGN
+   ========================================================================== */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap; 
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 50px; /* Modern capsule-shaped buttons */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Dark professional button to pop against the aqua background */
+.btn-primary {
+  background-color: #111111; 
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #2d3748;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Clean transparent/bordered alternative button */
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #111;
+  backdrop-filter: blur(4px); /* Sleek modern glass effect */
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
